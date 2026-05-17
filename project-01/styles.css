@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    outline: none;
 }
 
 .LogoConv {
@@ -41,6 +42,7 @@ label {
     color: rgb(117, 5, 5);
     font-size: 18px;
     font-weight: 400;
+    
 }
 
 button {
