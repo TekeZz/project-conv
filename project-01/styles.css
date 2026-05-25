@@ -45,24 +45,37 @@ main {
 }
 
 
-
-.select {
+.currency-select {
     margin-bottom: 20px;
     padding: 10px;
     font-size: 18px;
     font-weight: 700px;
-    color: rgb(111, 63, 63);
+    color: rgb(129, 33, 33);
+    cursor: default;
+    cursor: pointer;
+    
+}
+
+.select-value-to-converted {
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 700px;
+    color: rgb(129, 33, 33);
     cursor: default;
     cursor: pointer;
     
 }
 
 .result-box {
-    border: 2px solid purple;
+    border: 2px solid rgb(251, 41, 240);
     border-radius: 40px;
-    margin-top: 37px;
-    height: 60%;
-    padding: 46px;
+
+     width: 200px;
+    padding: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -112,26 +125,6 @@ button {
 
 }
 
-.result-box {
-    width: 40%;
-    padding: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    
-}
 
-.coins {
-    text-align: center;
-}
-
-.value {
-    width: 50%;
-    padding: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-   
-}
 
 
