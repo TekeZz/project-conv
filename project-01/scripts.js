@@ -1,6 +1,10 @@
 const setaButton = document.querySelector(".seta-button")
 const currencySelect = document.querySelector(".select-value-to-converted")
 
+
+
+
+
 function convertValues() {
     const inputCurrencyValue = document.querySelector(".value-input").value
     const currencyValueToCovert = document.getElementById ("toConvert")
@@ -34,7 +38,26 @@ function convertValues() {
     
 }
 
-currencySelect.addEventListener("change", convertValues)
+    function changeCurrency() {
+        const currencyName = document.getElementById("currency-name")
+        const currencyImg = document.querySelector(".currency-img")
+
+
+        if (currencySelect.value == "dolar") {
+            currencyName.innerHTML = "Dólar Americano"
+            currencyImg.src = "./assest/dolar-cor.png"
+        }
+        if (currencySelect.value == "euro") {
+            currencyName.innerHTML = "Euro"
+            currencyImg.src = "./assest/euro-cor.png"
+        }
+
+        convertValues()
+    }
+ 
+
+
+currencySelect.addEventListener("change", changeCurrency)
 setaButton.addEventListener("click", convertValues)
 
 

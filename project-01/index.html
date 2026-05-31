@@ -32,7 +32,9 @@
 
 
                 <select class="currency-select"> >
-                    <option>R$ Real Brasileiro</option>
+                    <option value="real">R$ Real Brasileiro</option>
+                    <option value="dolar">U$ Dólar Americano</option>
+                    <option value="euro">€ Euro</option>
                 </select>
             </label>
 
@@ -42,6 +44,7 @@
                 <select class="select-value-to-converted">
                     <option value="dolar">U$ Dólar Americano</option>
                     <option value="euro">€ Euro</option>
+                    <option value="real">R$ Real Brasileiro</option>
                 </select>
             </label>
             <br>
@@ -57,9 +60,9 @@
 
 
         <div class="result-box">
-            <img src="./assest/real-cor.png" alt="real-cor">
+            <img  src="./assest/real-cor.png" alt="real-cor">
 
-            <p class="coins">Real Brasileiro</p>
+            <p class="coins" id="currency-name-from">Real Brasileiro</p>
             <p class="currency-value-to-value" id="toConvert"> 0,00</p>
 
 
@@ -68,9 +71,9 @@
             </button>
 
 
-            <img src="./assest/dolar-cor.png" alt="dolar-cor">
+            <img class="currency-img" src="./assest/dolar-cor.png" alt="dolar-cor">
 
-            <p class="coins">Dólar Americano</p>
+            <p class="coins" id="currency-name">Dólar Americano</p>
             <p class="currency-value" id="converted"> 0,00</p>
         </div>
 
